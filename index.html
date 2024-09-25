@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Heróis da DC</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/avatar-herois.png" alt="avatar dos heróis da DC" class="rounded-circle" width="150" height="150">
+        <p class="lead">Bem-vindo ao mundo dos heróis!</p>
+        <h1>Os Defensores da Justiça</h1>
+        <p>Aqui você encontra informações sobre os grandes heróis da DC Comics. Conheça seus poderes, histórias e as aventuras que enfrentaram!</p>
+        <p>Habilidades dos Heróis</p>
+        <div>
+            <p class="badge bg-secondary">Superforça</p>
+            <p class="badge bg-secondary">Voo</p>
+            <p class="badge bg-secondary">Inteligência</p>
+            <p class="badge bg-secondary">Habilidades de Combate</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Heróis em Destaque</h2>
+        <div class="row">
+            <!-- Herói 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/superhomi.jpeg" class="card-img-top" alt="Superman">
+                    <div class="card-body">
+                        <h5 class="card-title">Superman</h5>
+                        <p class="card-text">O Homem de Aço, conhecido por sua força incrível, capacidade de voar e visão de raio-X. Ele é um símbolo de esperança e justiça.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja mais</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Herói 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/rico.jpeg" class="card-img-top" alt="Batman">
+                    <div class="card-body">
+                        <h5 class="card-title">Batman</h5>
+                        <p class="card-text">O Cavaleiro das Trevas, um vigilante sem superpoderes, mas com uma mente brilhante e habilidades de combate excepcionais. Ele luta contra o crime em Gotham City.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja mais</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Herói 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/louça.jpg" class="card-img-top" alt="Mulher-Maravilha">
+                    <div class="card-body">
+                        <h5 class="card-title">Mulher-Maravilha</h5>
+                        <p class="card-text">Uma guerreira amazona com habilidades sobre-humanas, incluindo força, velocidade e agilidade. Ela é uma defensora da paz e da justiça.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Superman</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Superman, nascido como Kal-El em Krypton, é um dos super-heróis mais icônicos. Ele foi enviado à Terra por seus pais antes da destruição de seu planeta natal. Adotado por uma família em Smallville, ele cresceu e desenvolveu suas habilidades sobre-humanas.</p>
+                    <img src="img/superhomi.jpeg" class="img-fluid w-100" alt="Superman">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.dc.com/characters/superman">Ver mais sobre o Superman</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Batman</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Batman, o alter ego de Bruce Wayne, é um dos heróis mais complexos. Após presenciar o assassinato de seus pais, ele jura vingar suas mortes, dedicando sua vida a combater o crime. Ele utiliza sua inteligência, recursos e habilidades de luta.</p>
+                    <img src="img/rico.jpeg" class="img-fluid w-100" alt="Batman">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.dc.com/characters/batman">Ver mais sobre o Batman</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mulher-Maravilha</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Mulher-Maravilha, também conhecida como Diana, é uma princesa das Amazonas. Ela é uma guerreira habilidosa, conhecida por sua força e agilidade, além de ter a habilidade de voar. Diana representa igualdade e justiça, lutando por um mundo melhor.</p>
+                    <img src="img/louça.jpg" class="img-fluid w-100" alt="Mulher-Maravilha">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://www.dc.com/characters/wonder-woman">Ver mais sobre a Mulher-Maravilha</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/femascheti">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por kayky alves</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
